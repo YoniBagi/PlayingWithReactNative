@@ -11,7 +11,7 @@ const CounterScreenWithReducer = () => {
     return (
         <View>
             <Button title="Increase" onPress={() => dispatch({payload: 1})}/>
-            <Button title="Decrease" onPress={() => dispatch({payload: 1})}/>
+            <Button title="Decrease" onPress={() => dispatch({payload: -1})}/>
             <Text>Current Count: {state.count}</Text>
         </View>
     )
